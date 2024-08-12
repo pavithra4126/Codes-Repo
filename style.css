@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --main-color: rgb(197, 131, 131);
+    --primary-color:white;
+}
+
+/*Utility Stylel*/
+
+button{
+    padding: 10px 30px;
+    background: var(--main-color);
+    border: none;
+    cursor: pointer;
+}
+
+/*Resets*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:black;
+}
+
+/*Nav*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 50px;
+}
+
+li{
+    display:inline;
+    list-style: none;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    margin: 40px;
+    padding-bottom: 10px;
+}
+
+li a:hover{
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/*Nav End*/
+
+/*Header Start*/
+.header{
+    background: url(pexels-egokcek-15697027-removebg-preview.png);
+    background-position:center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: normal;
+
+    /*flexbox*/
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.main-heading{
+    position: absolute;
+    top: 5rem;
+    font-size: 5rem;
+    word-spacing: 5px;
+    
+
+}
+
+.primary-heading{
+    position: absolute;
+    bottom: 10rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    margin-bottom: -40px;
+
+}
+
+.btn{
+
+    position: absolute;
+    bottom: 2rem;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background: transparent;
+    background: var(--main-color);
+    transform:translateY(60px) ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+/*Our Story*/
+
+#our-story{
+    height: 100vh;
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.img{
+    width: 400px;
+    height: 400px;
+    background: url(pexels-elena-kravets-1601294419-27442043-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.title-style{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 4rem;
+    color: white;
+    transform:translateX(-100px) 
+}
+
+.line{
+    width: 100px;
+    height: 2px;
+    background: white;
+    transform: translateX(-120px);
+}
+
+.section-content p{
+max-width: 500px;
+color:white;
+font-family: sans-serif;
+line-height: 20px ;
+margin: 20px 0;
+
+}
+
+/*Coffee start*/
+
+.coffee-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+
+.content-section p{
+
+    max-width: 500px;
+    margin-top: 20px;
+    font-family:sans-serif;
+    color: white;
+
+}
+
+
+.img-2{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+.title-two{
+
+    font-size: 3rem;
+    color: white;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.product{
+
+    margin: 5rem;
+
+}
+
+.title-three{
+    font-size: 4rem;
+    margin-left: 10rem;
+    margin-top:10rem;
+    margin-bottom: 10rem;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center
+}
+
+.card{
+    border : 2px solid var(--main-color);
+    padding: 0 20px;
+    height: 400px;
+    width: 300px;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    /* margin-bottom: 4rem; */
+    
+}
+
+.card-img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    
+}
+
+.img-one{
+    background: url(pexels-withoguz-26611567-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.img-two{
+    background: url(pexels-withoguz-26611567-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.img-three{
+    background: url(pexels-withoguz-26611567-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.card-title{
+color: white;
+font-family:sans-serif ;
+margin-top: 50px;
+
+}
+
+.items p{
+    color: white;
+    margin: 20px 0;
+    font-family: sans-serif;
+}
+
+footer{
+   height: 50vh; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    font-family: sans-serif
+}
+
+.container{
+
+    margin: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.heading-info{
+    margin-bottom: 20px;
+
+}
+
+footer p{
+
+    line-height: 25px;
+}
+
+span{
+
+color: var(--main-color)
+}
+
+hr{
+    margin-bottom: 20px;
+    border: var(--main-color);
+    width: 500px;
+    margin: auto 0;
+}
+
+.para{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px){
+.main-heading, 
+.primary-heading{
+    font-size: 2.5rem;
+}
+#our-story
+{
+    text-align:centre;
+}
+#our-story.title{
+    transform: translateX(50px);
+}
+our-story.line{
+    display:none;
+}
+}
+
+
+    
